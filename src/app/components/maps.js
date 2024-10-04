@@ -586,33 +586,33 @@ export default function MapCoordinates() {
   };
 
     // Add Tawk.to script and change widget position
-    useEffect(() => {
-      if (typeof window !== 'undefined') {
-      window.Tawk_API = window.Tawk_API || {};
-      window.Tawk_LoadStart = new Date();
+    // useEffect(() => {
+    //   if (typeof window !== 'undefined') {
+    //   window.Tawk_API = window.Tawk_API || {};
+    //   window.Tawk_LoadStart = new Date();
   
-      const s1 = document.createElement("script");
-      s1.async = true;
-      s1.src = "https://embed.tawk.to/66ff799c37379df10df1958b/1i9av63aa";
-      s1.charset = "UTF-8";
-      s1.setAttribute("crossorigin", "*");
-      document.body.appendChild(s1);
+    //   const s1 = document.createElement("script");
+    //   s1.async = true;
+    //   s1.src = "https://embed.tawk.to/66ff799c37379df10df1958b/1i9av63aa";
+    //   s1.charset = "UTF-8";
+    //   s1.setAttribute("crossorigin", "*");
+    //   document.body.appendChild(s1);
   
-      // Inject custom CSS to change the widget position
-      const style = document.createElement("style");
-      style.innerHTML = `
-        .tawk-min-container {
-          left: 20px !important;
-          right: auto !important;
-        }
-        .tawk-chat-container {
-          left: 20px !important;
-          right: auto !important;
-        }
-      `;
-      document.head.appendChild(style);
-      }
-    }, []); 
+    //   // Inject custom CSS to change the widget position
+    //   const style = document.createElement("style");
+    //   style.innerHTML = `
+    //     .tawk-min-container {
+    //       left: 20px !important;
+    //       right: auto !important;
+    //     }
+    //     .tawk-chat-container {
+    //       left: 20px !important;
+    //       right: auto !important;
+    //     }
+    //   `;
+    //   document.head.appendChild(style);
+    //   }
+    // }, []); 
 
     const mapId = 'ABCDEF1234567890';
     const token = '1234567890abcdef';
