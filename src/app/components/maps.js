@@ -587,6 +587,7 @@ export default function MapCoordinates() {
 
     // Add Tawk.to script and change widget position
     useEffect(() => {
+      if (typeof window !== 'undefined') {
       window.Tawk_API = window.Tawk_API || {};
       window.Tawk_LoadStart = new Date();
   
@@ -610,7 +611,8 @@ export default function MapCoordinates() {
         }
       `;
       document.head.appendChild(style);
-    }) 
+      }
+    }, []); 
 
     const mapId = 'ABCDEF1234567890';
     const token = '1234567890abcdef';
