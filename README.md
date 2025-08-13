@@ -14,6 +14,28 @@ pnpm dev
 bun dev
 ```
 AI MODEL For Flood Prediction
+Table of Contents
+Problem Statement
+
+Our Solution
+
+System Architecture
+
+Key Features
+
+Technology Stack
+
+Getting Started
+
+Project Structure
+
+Acknowledgments
+
+License
+
+Problem Statement
+Bangladesh is one of the world's most vulnerable countries to climate change, with recurrent, devastating floods displacing millions, causing over $1 billion in annual economic damages, and resulting in tragic loss of life. Traditional flood warning systems often lack the lead time and geographical precision needed for effective disaster preparedness. This project directly addresses this critical challenge to national security and economic stability.
+
 
 
 
