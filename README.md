@@ -1,5 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+# 🌊 AI-Powered Flood Prediction for Bangladesh
+An AI-driven system to provide 15-day advance flood forecasts for 122 river monitoring stations across Bangladesh. This project is developed under the "AI for Bangladesh 2.0" theme, aiming to leverage technology to build a more resilient and secure nation
 ## Getting Started
 
 First, run the development server:
@@ -15,7 +15,7 @@ bun dev
 ```
 AI MODEL For Flood Prediction
 
-Open [http://localhost:3000](http://localhost:3000) with your 
+
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
