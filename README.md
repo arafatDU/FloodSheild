@@ -1,5 +1,26 @@
 # 🌊 AI-Powered Flood Prediction for Bangladesh
 An AI-driven system to provide 15-day advance flood forecasts for 122 river monitoring stations across Bangladesh. This project is developed under the "AI for Bangladesh 2.0" theme, aiming to leverage technology to build a more resilient and secure nation
+
+
+### Problem Statement
+Bangladesh is one of the world's most vulnerable countries to climate change, with recurrent, devastating floods displacing millions, causing over $1 billion in annual economic damages, and resulting in tragic loss of life. Traditional flood warning systems often lack the lead time and geographical precision needed for effective disaster preparedness. This project directly addresses this critical challenge to national security and economic stability.
+
+### Our Solution: An AI-Powered Early Warning System
+We have developed a system that uses a sophisticated AI model to predict river water levels 15 days in advance. By training a specialized model for each of the 122 water monitoring stations, our solution provides highly localized and accurate forecasts.
+
+The goal is to provide actionable intelligence to disaster management agencies, local authorities, and the public, enabling them to take proactive measures, save lives, and mitigate economic losses.
+
+System Architecture
+Our system follows a modular, multi-stage pipeline:
+
+Data Ingestion: A Python script automatically fetches real-time and historical water level data from the Bangladesh Water Development Board (BWDB) public API endpoint https://api.ffwc.gov.bd/data_load/observed-waterlevel-by-station-and-date/{station_id}/{yyyy-mm-dd}.
+
+Data Preprocessing: The raw 3-hourly data is cleaned, processed, and aggregated into daily average water levels. We enrich this data by engineering features like time-based variables (day of year, month) and lag features to provide historical context for the model.
+
+AI Core (LSTM Models): The heart of our system. We use Long Short-Term Memory (LSTM), a specialized type of neural network perfect for time-series forecasting. A unique LSTM model is trained for each of the 122 stations to learn its specific hydrological patterns.
+
+Prediction & Visualization: The trained models take the last 30 days of data as input to forecast the next 15 days. The output is then visualized on a web-based dashboard, showing a map of Bangladesh with each station color-coded by its predicted flood risk.
+
 ## Getting Started
 
 First, run the development server:
