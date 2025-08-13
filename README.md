@@ -15,6 +15,9 @@ bun dev
 ```
 AI MODEL For Flood Prediction
 
+Part 1: How to Create the Machine Learning Model
+Predicting 15 days in advance is a time-series forecasting problem. Given the complexity, a Long Short-Term Memory (LSTM) neural network is an excellent choice, as we discussed in the proposal.
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
